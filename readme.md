@@ -1,8 +1,8 @@
-# Portfolio Website: Showcase Your Creative Journey
+# Portfolio Website  
 
 Welcome to my portfolio website! Here, you'll find a curated collection of my work, reflecting my passion for coding, history, geopolitics and religion. As a full-stack web developer, I've had the privilege of working on diverse projects that have allowed me to hone my skills and creativity.
 
-## What You'll Discover:
+## What You'll Discover
 
 - 🎨 **Projects:** Explore a range of projects I've undertaken, including Text Modifier, Password Manager, Notes Manager, etc. Each project showcases my dedication to craftsmanship and attention to detail.
 
