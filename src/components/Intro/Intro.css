@@ -40,3 +40,11 @@
     font-size: medium;
     font-weight: 100;
 }
+
+.btn {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+}
