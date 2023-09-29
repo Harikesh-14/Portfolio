@@ -9,7 +9,7 @@
 
 .myPhoto {
     position: absolute;
-    top: -4rem;
+    top: -1rem;
     right: 0;
     z-index: -1;
     object-fit: cover;
@@ -37,8 +37,9 @@
 }
 
 .introPara {
-    font-size: medium;
+    font-size: small;
     font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .btn {
@@ -47,4 +48,34 @@
     padding: 0.75rem 2rem;
     border: none;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img {
+    object-fit: cover;
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 840px) {
+    .myPhoto {
+        right: -12vw;
+    }
+
+    .introContent {
+        font-size: 10vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .myPhoto {
+        right: -26vw;
+    }
 }

@@ -10,9 +10,9 @@ export default function Intro() {
     <section id="intro">
         <div className="introContent">
             <span className="hello">Hello,</span>
-            <span className="introText">I'm <span className="introName">Harikesh</span> <br/> Full-Stack Web Developer</span>
+            <span className="introText">I'm <span className="introName">Harikesh</span> <br/> Web Developer</span>
             <p className="introPara">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sequi repellendus deleniti eligendi quae! Numquam ipsum fugiat aspernatur assumenda, soluta excepturi nemo? A, iusto laborum? Deserunt fugit ut a quibusdam?
+            I'm a passionate full-stack web developer with a creative mindset <br /> and a penchant for turning ideas into reality. With a strong foundation <br /> in both front-end and back-end technologies, I bring websites and <br /> web applications to life, crafting seamless user experiences and robust <br /> functionality.
             </p>
             <Link><button className="btn"><img src={hireMeLogo} alt="Hire Me" /> Hire Me</button></Link>
         </div>
