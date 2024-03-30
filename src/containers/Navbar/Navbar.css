@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 nav {
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #f2f5f7;
+    padding: .5rem 2vw;
     letter-spacing: 1px;
-    width: 100vw;
     color: #000;
     font-weight: 600;
     font-size: 1.1rem;
@@ -25,26 +26,24 @@ nav {
 
 /*Styling Links*/
 .nav-links {
-    width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     list-style: none;
     text-transform: uppercase;
 }
 
-.nav-links li a {
+.nav-links li .a {
     text-decoration: none;
     padding: 0 1vw;
     margin: 0 0.7vw;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
-.nav-links li a:hover {
+.nav-links li .a:hover {
     border-left: 3px solid #668A85;
     border-right: 3px solid #668A85;
     color: #668A85;
@@ -52,6 +51,14 @@ nav {
 
 .nav-links li {
     position: relative;
+}
+
+.callBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Styling Hamburger Icon*/
@@ -72,6 +79,16 @@ nav {
     nav {
         position: fixed;
         z-index: 3;
+        color: #000;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .callBtn {
+        display: none;
     }
 
     .hamburger {
@@ -81,16 +98,22 @@ nav {
         right: 5%;
         top: 50%;
         transform: translate(-5%, -50%);
-        z-index: 2;
+        z-index: 2;;
         transition: all 0.7s ease;
+    }
+
+    .hamburger div {
+        background-color: #000;
     }
 
     .nav-links {
         position: fixed;
-        background: #131418;
+        background: #F1EFE5;
         height: 100vh;
         width: 100%;
         flex-direction: column;
+        gap: 40px;
+        align-items: center;
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
@@ -104,7 +127,8 @@ nav {
     }
 
     .nav-links li {
-        opacity: 0;
+        opacity: 1;
+        font-size: 1.5rem;
     }
 
     .nav-links li:nth-child(1) {
@@ -127,18 +151,8 @@ nav {
         transition: all 0.5s ease 0.8s;
     }
 
-    .nav-links li:nth-child(6) {
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-
-    .nav-links li:nth-child(7) {
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-
-    li.fade {
-        opacity: 1;
+    .nav-links li .a {
+        color: #000;
     }
 }
 

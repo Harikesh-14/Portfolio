@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import './Navbar.css';
 
@@ -15,21 +18,22 @@ const Navbar = () => {
                 <div className="logo">
                     <h1>Harikesh</h1>
                 </div>
+                <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+                    <li><Link to={'/'} className='a'>Home</Link></li>
+                    <li><Link to={'/'} className='a'>Portfolio</Link></li>
+                    <li><Link to={'/'} className='a'>Skills</Link></li>
+                    <li><Link to={'/'} className='a'>Projects</Link></li>
+                    <li><Link to={'/'} className='a'>About</Link></li>
+                    <li><Link to={'/'} className='a'>Contact</Link></li>
+                </ul>
+                <div className='callBtn'>
+                    <p>+91 9319958749</p>
+                    <Link to={'/'} className='px-3 py-3 bg-white rounded-full shadow-lg flex justify-center items-center'><FontAwesomeIcon icon={faPhone} style={{color: "#668a85",}} /></Link>
+                </div>
                 <div className={`hamburger ${isOpen ? 'toggle' : ''}`} onClick={toggleNavbar}>
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
-                </div>
-                <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <div>
-                    <p>+91 9319958749</p>
-                    <p>Icon</p>
                 </div>
             </nav>
         </div>
