@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <div>
+        <div className='w-screen'>
             <nav>
                 <div className="logo">
                     <h1>Harikesh</h1>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <li><Link to={'/'} className='a'>Contact</Link></li>
                 </ul>
                 <div className='callBtn'>
-                    <p>+91 9319958749</p>
+                    <p className='phoneNumber'>+91 9319958749</p>
                     <Link to={'/'} className='px-3 py-3 bg-white rounded-full shadow-lg flex justify-center items-center'><FontAwesomeIcon icon={faPhone} style={{color: "#668a85",}} /></Link>
                 </div>
                 <div className={`hamburger ${isOpen ? 'toggle' : ''}`} onClick={toggleNavbar}>

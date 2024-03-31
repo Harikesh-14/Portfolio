@@ -16,6 +16,11 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      spotText: "#0D2F3F",
+      highlightedText: "#286F6C",
+      linkText: "#F37959",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

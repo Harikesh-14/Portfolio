@@ -1,6 +1,10 @@
+import Intro from "@/containers/Intro/Intro"
+
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Intro />
+    </div>
   )
 }
 
