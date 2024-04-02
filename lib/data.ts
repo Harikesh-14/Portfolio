@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import blogAppImg from "@/public/BlogApp.png";
+import fileOpsImg from "@/public/FileOps.png";
+import veggiesMartImg from "@/public/Veggies-Mart.png";
 
 export const links = [
   {
@@ -62,25 +62,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "BlogApp",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A blog app where users can create, read, update and delete blog posts. It's built with React, MongoDB, Express and Node.js. It also has authentication.",
+    tags: ["React", "MongoDB", "Tailwind", "MongoDB", "Express", "Node.js"],
+    imageUrl: blogAppImg,
   },
   {
-    title: "rmtDev",
+    title: "E-Commerce Store",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "An e-commerce store where users can buy vegetables. It's built with React, Redux, MongoDB, Express and Node.js. It also has authentication.",
+    tags: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind"],
+    imageUrl: veggiesMartImg,
   },
   {
-    title: "Word Analytics",
+    title: "File System CLI Tool",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A CLI tool for file operations like copying, moving, deleting and creating files and directories. It's built with Rust.",
+    tags: ["Rust", "fs"],
+    imageUrl: fileOpsImg,
+  },
+  {
+    title: "TodoX CLI Tool",
+    description:
+      "A CLI tool for managing todos. It's built with Rust and uses sqlite3 for the database.",
+    tags: ["Rust", "sqlite3"],
+    imageUrl: fileOpsImg,
   },
 ] as const;
 
