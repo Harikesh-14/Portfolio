@@ -3,10 +3,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import myPhoto from '@/public/myPhoto.png'
 import Link from 'next/link';
-import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsArrowRight, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
+import { SiLeetcode } from 'react-icons/si';
+
+import myPhoto from '@/public/myPhoto.png'
 
 function Intro() {
   return (
@@ -57,36 +59,51 @@ function Intro() {
       </motion.p>
 
       <motion.div
-        className='flex flex-row justify-center gap-3'
+        className='flex flex-col sm:flex-row justify-center gap-3 font-medium'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <Link
           href='#contact'
-          className='bg-gray-900 text-white px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          className='cursor-pointer group bg-gray-900 text-white px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
         >
-          Contact Me <BsArrowRight />
+          Contact Me <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition-all ease-linear' />
         </Link>
         <Link
-          className='bg-white text-black px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
-          href={''}
-          passHref
+          className='cursor-pointer group bg-white text-black px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          href={'/ResumeFinal.pdf'}
+          target='_blank'
+          download={true}
         >
-          Download CV <HiDownload />
+          Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition-all ease-linear' />
         </Link>
         <Link
           href={'https://www.linkedin.com/in/harikeshranjansinha/'}
           target='_blank'
-          className='bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          className='cursor-pointer bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
         >
           <BsLinkedin />
         </Link>
         <Link
           href={'https://github.com/Harikesh-14/'}
           target='_blank'
-          className='bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          className='cursor-pointer bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
         >
           <BsGithub />
+        </Link>
+        <Link
+          href={'https://www.instagram.com/harikeshranjansinha/'}
+          target='_blank'
+          className='bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+        >
+          <BsInstagram />
+        </Link>
+        <Link
+          href={'https://leetcode.com/hn9853/'}
+          target='_blank'
+          className='cursor-pointer bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+        >
+          <SiLeetcode />
         </Link>
       </motion.div>
     </section>
