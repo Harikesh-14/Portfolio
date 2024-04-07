@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { links } from '@/lib/data';
+import Link from 'next/link';
 
 function Header() {
   return (
@@ -12,6 +14,25 @@ function Header() {
           animate={{ y: 0, x: '-50%', opacity: 1 }}
         >
         </motion.div>
+
+        <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
+          <ul className='w-[22rem] flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-600 sm:w-[initial] sm:flex-nowrap sm:gap-5'>
+            {
+              links.map((link) => {
+                return (
+                  <motion.li 
+                  className='h-3/4 flex items-center justify-center' 
+                  key={link.hash}
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  >
+                    <Link className='w-full flex items-center justify-center py-3 px-3 hover:text-gray-950 transition-all ease-linear' href={link.hash}>{link.name}</Link>
+                  </motion.li>
+                )
+              })
+            }
+          </ul>
+        </nav>
     </header>
   )
 }
