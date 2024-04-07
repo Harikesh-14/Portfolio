@@ -58,6 +58,8 @@ function Intro() {
 
       <motion.div
         className='flex flex-row justify-center gap-3'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
       >
         <Link
           href='#contact'
@@ -67,19 +69,21 @@ function Intro() {
         </Link>
         <Link
           className='bg-white text-black px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
-          href={'/resume.pdf'}
+          href={''}
           passHref
         >
           Download CV <HiDownload />
         </Link>
         <Link
-          href={''}
+          href={'https://www.linkedin.com/in/harikeshranjansinha/'}
+          target='_blank'
           className='bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
         >
           <BsLinkedin />
         </Link>
         <Link
-          href={''}
+          href={'https://github.com/Harikesh-14/'}
+          target='_blank'
           className='bg-white text-black px-4 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
         >
           <BsGithub />
