@@ -64,28 +64,28 @@ export const projectsData = [
   {
     title: "BlogApp",
     description:
-      "A blog app where users can create, read, update and delete blog posts. It's built with React, MongoDB, Express and Node.js. It also has authentication.",
-    tags: ["React", "MongoDB", "Tailwind", "MongoDB", "Express", "Node.js"],
+      "A blog app where users can create, read, update and delete blog posts. It secures user's data with authentication.",
+    tags: ["React", "Mongo DB", "Tailwind", "MongoDB", "Express", "Node.js"],
     imageUrl: blogAppImg,
   },
   {
     title: "E-Commerce Store",
     description:
-      "An e-commerce store where users can buy vegetables. It's built with React, Redux, MongoDB, Express and Node.js. It also has authentication.",
+      "An e-commerce store where users can buy vegetables. It also has authentication. It secures user's data with authentication.",
     tags: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind"],
     imageUrl: veggiesMartImg,
   },
   {
     title: "File System CLI Tool",
     description:
-      "A CLI tool for file operations like copying, moving, deleting and creating files and directories. It's built with Rust.",
+      "A CLI tool for file operations like copying, moving, deleting and creating files and directories. It's built with Rust. It uses the std::fs module.",
     tags: ["Rust", "fs"],
     imageUrl: fileOpsImg,
   },
   {
     title: "TodoX CLI Tool",
     description:
-      "A CLI tool for managing todos. It's built with Rust and uses sqlite3 for the database.",
+      "A CLI tool for managing todos. It's built with Rust and uses sqlite3 for the database. It uses the std::fs module.",
     tags: ["Rust", "sqlite3"],
     imageUrl: fileOpsImg,
   },

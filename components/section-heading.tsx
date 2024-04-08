@@ -10,7 +10,7 @@ type SectionHeadingProps = {
 function SectionHeading({ text }: SectionHeadingProps ) {
   return (
     <motion.h2
-      className='text-3xl capitalize font-medium mb-8'
+      className='text-3xl capitalize font-medium mb-8 text-center'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
