@@ -2,18 +2,12 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import SectionHeading from './section-heading'
 
 function About() {
   return (
     <section className='text-center max-w-[45rem] leading-8 sm:mb-0'>
-      <motion.h2
-        className='text-3xl capitalize font-medium mb-8'
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-      >
-        About me
-      </motion.h2>
+      <SectionHeading text={"About Me"} />
       <motion.p
         className='font-medium mb-3'
         initial={{ opacity: 0, y: 100 }}
