@@ -72,7 +72,7 @@ export const projectsData = [
     title: "E-Commerce Store",
     description:
       "An e-commerce store where users can buy vegetables. It also has authentication. It secures user's data with authentication.",
-    tags: ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind"],
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
     imageUrl: veggiesMartImg,
   },
   {
