@@ -1,25 +1,15 @@
 "use client";
 
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
-import { useActiveSectionContext } from '@/context/activeSectionContext'
+import React from 'react'
 
 import SectionHeading from './section-heading'
 import ProjectCard from './project-card'
 
 import { projectsData } from '../lib/data'
+import { useSectionInView } from '@/lib/hook';
 
 function Projects() {
-  const { ref, inView } = useInView({
-    threshold: 0.5
-  })
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('Projects')
-    }
-  }, [inView, timeOfLastClick])
+  const { ref } = useSectionInView('Projects', 0.5)
 
   return (
     <section ref={ref} className='mt-20 scroll-mt-28' id='projects'>
