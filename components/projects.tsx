@@ -6,7 +6,7 @@ import { projectsData } from '../lib/data'
 
 function Projects() {
   return (
-    <section className='mt-20'>
+    <section className='mt-20 scroll-mt-28' id='projects'>
       <SectionHeading text='My Projects' />
 
       <div>

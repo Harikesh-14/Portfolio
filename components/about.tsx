@@ -6,7 +6,7 @@ import SectionHeading from './section-heading'
 
 function About() {
   return (
-    <section className='text-center max-w-[45rem] leading-8 sm:mb-0'>
+    <section className='text-center max-w-[45rem] leading-8 sm:mb-0 scroll-mt-28' id='about'>
       <SectionHeading text={"About Me"} />
       <motion.p
         className='font-medium mb-3'
