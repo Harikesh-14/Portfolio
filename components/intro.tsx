@@ -48,7 +48,7 @@ function Intro() {
       </div>
 
       <motion.p
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-xl'
+        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -70,7 +70,7 @@ function Intro() {
           Contact Me <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition-all ease-linear' />
         </Link>
         <Link
-          className='cursor-pointer group bg-white text-black px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          className='cursor-pointer group bg-white text-black px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30 hover:border-black/20'
           href={'/ResumeFinal.pdf'}
           target='_blank'
           download={true}
