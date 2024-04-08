@@ -1,9 +1,13 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+
+import { useActiveSectionContext } from '@/context/activeSectionContext';
+
 import { BsArrowRight, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { SiLeetcode } from 'react-icons/si';
@@ -11,8 +15,17 @@ import { SiLeetcode } from 'react-icons/si';
 import myPhoto from '@/public/myPhoto.png'
 
 function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.5
+  })
+  const { setActiveSection } = useActiveSectionContext()
+
+  useEffect(() => {
+    if(inView) setActiveSection('Home')
+  }, [inView])
+
   return (
-    <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'>
+    <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
