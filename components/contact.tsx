@@ -7,7 +7,7 @@ import { useSectionInView } from '@/lib/hook'
 import { sendEmail } from '@/actions/sendEmail';
 import SectionHeading from './section-heading'
 
-import { FaPaperPlane } from 'react-icons/fa';
+import SubmitBtn from './submit-btn';
 
 function Contact() {
   const { ref } = useSectionInView('Contact', 0.3)
@@ -39,7 +39,14 @@ function Contact() {
         transition={{ duration: .5 }}
         viewport={{ once: true }}
         action={async (formData)=> {
-          await sendEmail(formData)
+          const { data, errorMessage } = await sendEmail(formData)
+
+          if (errorMessage) {
+            alert(errorMessage)
+            return
+          }
+
+          alert('Email sent successfully')
         }}
       >
         <input
@@ -57,16 +64,7 @@ function Contact() {
           maxLength={3000}
           required
         />
-        <button
-          type='submit'
-          className='group h-[3rem] w-[8rem] mx-auto bg-gray-900 text-white rounded-full mt-4 flex items-center justify-center gap-2 outline-none focus:outline-none hover:bg-gray-800 transition-all ease-linear hover:scale-110'
-          
-        >
-          Submit
-          <FaPaperPlane
-            className='group-hover:translate-x-1 group-hover:-translate-y-1 transition-all ease-linear'
-          />
-        </button>
+        <SubmitBtn />
       </motion.form>
     </section>
   )
