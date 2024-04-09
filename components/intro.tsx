@@ -13,7 +13,7 @@ import myPhoto from '@/public/myPhoto.png'
 import { useSectionInView } from '@/lib/hook';
 
 function Intro() {
-  const { ref } = useSectionInView('Home', 0.5)
+  const { ref, setActiveSection, setTimeOfLastClick } = useSectionInView('Home', 0.5)
 
   return (
     <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'>
@@ -70,6 +70,10 @@ function Intro() {
         <Link
           href='#contact'
           className='cursor-pointer group bg-gray-900 text-white px-7 py-3 flex items-center gap-3 rounded-full hover:scale-110 transition-transform ease-in-out duration-30'
+          onClick={() => {
+            setActiveSection('Contact')
+            setTimeOfLastClick(Date.now())
+          }}
         >
           Contact Me <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition-all ease-linear' />
         </Link>

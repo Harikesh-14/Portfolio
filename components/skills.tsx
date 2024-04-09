@@ -26,7 +26,7 @@ function Skills() {
 
   return (
     <section
-      className='mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
+      className='mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-28'
       id='skills'
       ref={ref}
     >

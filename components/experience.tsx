@@ -16,7 +16,7 @@ function Experience() {
     <section
       ref={ref}
       id='experience'
-      className='max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
+      className='max-w-[53rem] scroll-mt-28 text-center sm:mb-28'
     >
       <SectionHeading text='My experience' />
 
