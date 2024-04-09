@@ -17,7 +17,7 @@ function Contact() {
     <section
       ref={ref}
       id='contact'
-      className='max-w-[53rem] scroll-mt-28 text-center sm:mb-28 w-[min(100%, 38rem)]'
+      className='max-w-[53rem] scroll-mt-28 text-center sm:mb-24 w-[min(100%, 38rem)]'
     >
       <SectionHeading text='Contact Me' />
       <motion.p
