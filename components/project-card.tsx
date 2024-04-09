@@ -29,11 +29,11 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
       className='group mb-4 sm:mb-8 last:mb-0'
     >
       <section
-        className='relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden rounded-lg sm:pr-8 sm:h-[17rem] hover:bg-gray-200 transition cursor-pointer'
+        className='relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden rounded-lg sm:pr-8 sm:h-[17rem] hover:bg-gray-200 transition cursor-pointer dark:bg-white/10 dark:hover:bg-white/20'
       >
-        <div className='pt-4 pb-5 px-5 sm:pl-10 sm:pr-2 sm:pt-7 sm:max-w-[55%] flex flex-col h-full group-even:ml-[18rem]'>
+        <div className='pt-4 pb-5 px-5 sm:pl-10 sm:pr-2 sm:pt-7 sm:max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem]'>
           <h3 className='font-semibold text-2xl'>{title}</h3>
-          <p className='mt-2 text-gray-700'>{description}</p>
+          <p className='mt-2 text-gray-700 dark:text-gray-400'>{description}</p>
           <ul className='flex flex-wrap mt-2 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
@@ -50,7 +50,7 @@ function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
           src={imageUrl}
           alt='Project Image'
           quality={95}
-          className='absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.05] group-even:group-hover:-translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-3 transition-all ease-linear'
+          className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.05] group-even:group-hover:-translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-3 transition-all ease-linear'
         />
       </section>
     </motion.div>

@@ -26,7 +26,7 @@ function Skills() {
 
   return (
     <section
-      className='mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-28'
+      className='my-24 max-w-[53rem] scroll-mt-28 text-center sm:mb-28'
       id='skills'
       ref={ref}
     >
@@ -36,7 +36,7 @@ function Skills() {
         {
           skillsData.map((skill, index) => (
             <motion.li
-              className='bg-white border border-black/[0.1] rounded-xl px-4 py-2'
+              className='bg-white border border-black/[0.1] rounded-xl px-4 py-2 dark:bg-gray-950 dark:border-gray-800 dark:text-gray-100'
               key={index}
               variants={fadeInAnimationVariants}
               initial='initial'
