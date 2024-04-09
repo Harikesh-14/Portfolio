@@ -1,6 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import blogAppImg from "@/public/BlogApp.png";
 import fileOpsImg from "@/public/FileOps.png";
@@ -35,28 +34,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Frontend Developer Intern",
+    location: "Centre for Railway Information Systems, New Delhi, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I worked here as a frontend developer intern. I worked on the frontend of a websites using JSP, HTML, CSS and JavaScript.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "5th June 2023 - 5th July 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Backend Developer",
+    location: "SRM University, Chennai, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I am currently working in the tech team of Directorate of Student's Affairs (DSA) as a backend developer. I'm working on a project that involves building a website for the club. DSA organizes the cultural fest of the university",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "August 2023 - Present",
   },
 ] as const;
 
