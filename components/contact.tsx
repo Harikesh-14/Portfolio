@@ -8,6 +8,7 @@ import { sendEmail } from '@/actions/sendEmail';
 import SectionHeading from './section-heading'
 
 import SubmitBtn from './submit-btn';
+import toast from 'react-hot-toast';
 
 function Contact() {
   const { ref } = useSectionInView('Contact', 0.3)
@@ -42,11 +43,11 @@ function Contact() {
           const { data, errorMessage } = await sendEmail(formData)
 
           if (errorMessage) {
-            alert(errorMessage)
+            toast.error(errorMessage)
             return
           }
 
-          alert('Email sent successfully')
+          toast.success('Message sent successfully')
         }}
       >
         <input
