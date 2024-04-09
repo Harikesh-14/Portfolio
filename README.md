@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
+
+Welcome to my portfolio website! This repository contains the code for my personal website, where I showcase my skills, projects, and interests.
+
+## About Me
+
+As a Computer Science Engineering student, I am deeply passionate about coding, with a specialization in full-stack Web development. My expertise lies in utilizing the MERN stack, complemented by Next.js, to craft dynamic and responsive websites that seamlessly integrate functionality and aesthetics.
+
+Beyond the realm of coding, I find solace in delving into topics of geopolitics and Indian history, enriching my understanding of the world around me. In my leisure time, I indulge in the culinary arts, finding joy in experimenting with different cuisines. And when seeking a thrilling escape, I immerse myself in the world of horror movies. Through this diverse blend of interests and skills, I continually seek to expand my knowledge and contribute to innovative projects within the tech industry.
 
 ## Getting Started
 
-First, run the development server:
+To view my website locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Open the `index.html` file in your web browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- MERN stack (MongoDB, Express.js, React.js, Node.js)
+- Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contact Me
 
-## Learn More
+Feel free to reach out to me if you have any questions or collaboration opportunities. You can contact me via email at [harikeshranjansinha14@gmail.com](mailto:harikeshranjansinha14@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/harikeshranjansinha/).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting my portfolio website!
